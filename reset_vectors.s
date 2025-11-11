@@ -1,3 +1,4 @@
+.debuginfo
 .segment "RESET_VECTORS"
 
 .import RESET

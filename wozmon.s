@@ -1,4 +1,5 @@
 .setcpu "65C02"
+.debuginfo
 .segment "WOZMON"
 
 .export RESET_WOZMON

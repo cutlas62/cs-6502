@@ -7,14 +7,15 @@ LD = ld65
 # Project configuration
 CONFIG = memory.cfg
 TARGET = cs6502.bin
+SYMBOLS = symbols.sym
 OBJDIR = obj
 
 # Flags
 ASFLAGS =
-LDFLAGS = -C $(CONFIG)
+LDFLAGS = -C $(CONFIG) -Ln $(SYMBOLS)
 
 # Sources and Objects
-SOURCES = hello_world.s wozmon.s reset_vectors.s
+SOURCES = bios.s hello_world.s wozmon.s reset_vectors.s
 OBJECTS = $(addprefix $(OBJDIR)/, $(SOURCES:.s=.o))
 
 # Default target

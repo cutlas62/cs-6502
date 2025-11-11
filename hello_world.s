@@ -1,4 +1,5 @@
 .setcpu "65C02"
+.debuginfo
 .segment "HELLO_WORLD"
 
 .export RESET
